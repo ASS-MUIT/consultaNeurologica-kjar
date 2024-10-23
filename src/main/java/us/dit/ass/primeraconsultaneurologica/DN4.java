@@ -14,37 +14,37 @@ public class DN4 implements java.io.Serializable {
 	@javax.persistence.SequenceGenerator(sequenceName = "DN4_ID_SEQ", name = "DN4_ID_GENERATOR")
 	private java.lang.Long id;
 
-	@org.kie.api.definition.type.Label(value = "Característica del dolor")
+	@org.kie.api.definition.type.Label("Característica del dolor")
 	private java.lang.Boolean dolorQuemazon;
 
-	@org.kie.api.definition.type.Label(value = "Caracteristica del dolor")
+	@org.kie.api.definition.type.Label("Caracteristica del dolor")
 	private java.lang.Boolean frioDoloroso;
 
-	@org.kie.api.definition.type.Label(value = "Caracteristica del dolor descarga electrica")
+	@org.kie.api.definition.type.Label("Caracteristica del dolor descarga electrica")
 	private java.lang.Boolean descargaElectrica;
 
-	@org.kie.api.definition.type.Label(value = "sintoma en la zona")
+	@org.kie.api.definition.type.Label("¿Asocia el dolor a la sensación de hormigueo en la misma zona?")
 	private java.lang.Boolean hormigueo;
 
-	@org.kie.api.definition.type.Label(value = "sintomas en la zona alfileres o agujas")
+	@org.kie.api.definition.type.Label("¿Asocia el dolor a la sensación de alfileres o agujas en la misma zona?")
 	private java.lang.Boolean alfileres;
 
-	@org.kie.api.definition.type.Label(value = "sintomas en la zona entumecimiento")
+	@org.kie.api.definition.type.Label("¿Asocia el dolor a la sensación de entumecimiento en la misma zona?")
 	private java.lang.Boolean entumecimiento;
 
-	@org.kie.api.definition.type.Label(value = "sintoma en la zona picazon")
+	@org.kie.api.definition.type.Label("¿Asocia el dolor a la sensación de picazón o comezón en la misma zona?")
 	private java.lang.Boolean picazon;
 
-	@org.kie.api.definition.type.Label(value = "el examen fisico muetra hipoestesia al tacto")
+	@org.kie.api.definition.type.Label("el examen fisico muetra hipoestesia al tacto")
 	private java.lang.Boolean hipoestesiaTacto;
 
-	@org.kie.api.definition.type.Label(value = "el examen fisico muestra hipoestesia a los pinchazos")
+	@org.kie.api.definition.type.Label("el examen fisico muestra hipoestesia a los pinchazos")
 	private java.lang.Boolean hipoestesiaPinchazos;
 
-	@org.kie.api.definition.type.Label(value = "el dolor se causa o incrementa por cepillado o toque de agodon")
+	@org.kie.api.definition.type.Label("el dolor se causa o incrementa por cepillado o toque de agodon")
 	private java.lang.Boolean cepillado;
 
-	@org.kie.api.definition.type.Label(value = "puntuación del test")
+	@org.kie.api.definition.type.Label("puntuación del test")
 	private java.lang.Integer puntuacion;
 
 	public DN4() {
@@ -139,7 +139,7 @@ public class DN4 implements java.io.Serializable {
 	}
 
 	public java.lang.Integer getPuntuacion() {
-	    setPuntuacion();
+		setPuntuacion();
 		return this.puntuacion;
 	}
 
@@ -152,8 +152,7 @@ public class DN4 implements java.io.Serializable {
 			java.lang.Boolean descargaElectrica, java.lang.Boolean hormigueo,
 			java.lang.Boolean alfileres, java.lang.Boolean entumecimiento,
 			java.lang.Boolean picazon, java.lang.Boolean hipoestesiaTacto,
-			java.lang.Boolean hipoestesiaPinchazos,
-			java.lang.Boolean cepillado) {
+			java.lang.Boolean hipoestesiaPinchazos, java.lang.Boolean cepillado) {
 		this.id = id;
 		this.dolorQuemazon = dolorQuemazon;
 		this.frioDoloroso = frioDoloroso;
@@ -165,6 +164,27 @@ public class DN4 implements java.io.Serializable {
 		this.hipoestesiaTacto = hipoestesiaTacto;
 		this.hipoestesiaPinchazos = hipoestesiaPinchazos;
 		this.cepillado = cepillado;
+	}
+
+	public DN4(java.lang.Long id, java.lang.Boolean dolorQuemazon,
+			java.lang.Boolean frioDoloroso,
+			java.lang.Boolean descargaElectrica, java.lang.Boolean hormigueo,
+			java.lang.Boolean alfileres, java.lang.Boolean entumecimiento,
+			java.lang.Boolean picazon, java.lang.Boolean hipoestesiaTacto,
+			java.lang.Boolean hipoestesiaPinchazos,
+			java.lang.Boolean cepillado, java.lang.Integer puntuacion) {
+		this.id = id;
+		this.dolorQuemazon = dolorQuemazon;
+		this.frioDoloroso = frioDoloroso;
+		this.descargaElectrica = descargaElectrica;
+		this.hormigueo = hormigueo;
+		this.alfileres = alfileres;
+		this.entumecimiento = entumecimiento;
+		this.picazon = picazon;
+		this.hipoestesiaTacto = hipoestesiaTacto;
+		this.hipoestesiaPinchazos = hipoestesiaPinchazos;
+		this.cepillado = cepillado;
+		this.puntuacion = puntuacion;
 	}
 
 }
