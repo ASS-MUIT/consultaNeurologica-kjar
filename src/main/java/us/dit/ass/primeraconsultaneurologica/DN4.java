@@ -144,7 +144,16 @@ public class DN4 implements java.io.Serializable {
 	}
 
 	private void setPuntuacion() {
-		this.puntuacion = 0;
+		this.puntuacion =   dolorQuemazon.compareTo(false)+
+		                    frioDoloroso.compareTo(false)+
+		                    descargaElectrica.compareTo(false)+
+		                    hormigueo.compareTo(false)+
+		                    alfileres.compareTo(false)+
+		                    entumecimiento.compareTo(false)+
+		                    picazon.compareTo(false)+
+		                    hipoestesiaTacto.compareTo(false)+
+		                    hipoestesiaPinchazos.compareTo(false)+
+		                    cepillado.compareTo(false);
 	}
 
 	public DN4(java.lang.Long id, java.lang.Boolean dolorQuemazon,
@@ -165,7 +174,6 @@ public class DN4 implements java.io.Serializable {
 		this.hipoestesiaPinchazos = hipoestesiaPinchazos;
 		this.cepillado = cepillado;
 	}
-
 	public DN4(java.lang.Long id, java.lang.Boolean dolorQuemazon,
 			java.lang.Boolean frioDoloroso,
 			java.lang.Boolean descargaElectrica, java.lang.Boolean hormigueo,
@@ -186,5 +194,5 @@ public class DN4 implements java.io.Serializable {
 		this.cepillado = cepillado;
 		this.puntuacion = puntuacion;
 	}
-
+	
 }
