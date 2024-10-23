@@ -17,7 +17,7 @@ public class DN4 implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("¿Tiene el dolor la característica de quemazón?")
 	private java.lang.Boolean dolorQuemazon;
 
-	@org.kie.api.definition.type.Label("Caracteristica del dolor")
+	@org.kie.api.definition.type.Label("¿Tiene el dolor la característica de provocar una sensación de frío doloroso?")
 	private java.lang.Boolean frioDoloroso;
 
 	@org.kie.api.definition.type.Label("¿Tiene el dolor la característica descarga eléctrica?")
