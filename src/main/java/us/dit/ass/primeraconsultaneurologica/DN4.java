@@ -14,13 +14,13 @@ public class DN4 implements java.io.Serializable {
 	@javax.persistence.SequenceGenerator(sequenceName = "DN4_ID_SEQ", name = "DN4_ID_GENERATOR")
 	private java.lang.Long id;
 
-	@org.kie.api.definition.type.Label("Característica del dolor")
+	@org.kie.api.definition.type.Label("¿Tiene el dolor la característica de quemazón?")
 	private java.lang.Boolean dolorQuemazon;
 
 	@org.kie.api.definition.type.Label("Caracteristica del dolor")
 	private java.lang.Boolean frioDoloroso;
 
-	@org.kie.api.definition.type.Label("Caracteristica del dolor descarga electrica")
+	@org.kie.api.definition.type.Label("¿Tiene el dolor la característica descarga eléctrica?")
 	private java.lang.Boolean descargaElectrica;
 
 	@org.kie.api.definition.type.Label("¿Asocia el dolor a la sensación de hormigueo en la misma zona?")
