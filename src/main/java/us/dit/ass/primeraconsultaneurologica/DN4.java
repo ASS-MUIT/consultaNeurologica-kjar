@@ -38,10 +38,10 @@ public class DN4 implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("¿En el área del dolor el examen fisico muetra hipoestesia al tacto?")
 	private java.lang.Boolean hipoestesiaTacto;
 
-	@org.kie.api.definition.type.Label("el examen fisico muestra hipoestesia a los pinchazos")
+	@org.kie.api.definition.type.Label("¿En el áre del dolor el examen fisico muetra hipoestesia a los pinchazos?")
 	private java.lang.Boolean hipoestesiaPinchazos;
 
-	@org.kie.api.definition.type.Label("el dolor se causa o incrementa por cepillado o toque de agodon")
+	@org.kie.api.definition.type.Label("¿En el área del dolor puede este ser causado o incrementa por cepillado o toque de agodón?")
 	private java.lang.Boolean cepillado;
 
 	@org.kie.api.definition.type.Label("puntuación del test")
