@@ -35,10 +35,10 @@ public class DN4 implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("¿Asocia el dolor a la sensación de picazón o comezón en la misma zona?")
 	private java.lang.Boolean picazon;
 
-	@org.kie.api.definition.type.Label("¿En el área del dolor el examen fisico muetra hipoestesia al tacto?")
+	@org.kie.api.definition.type.Label("¿En el área del dolor el examen fisico muestra hipoestesia al tacto?")
 	private java.lang.Boolean hipoestesiaTacto;
 
-	@org.kie.api.definition.type.Label("¿En el áre del dolor el examen fisico muetra hipoestesia a los pinchazos?")
+	@org.kie.api.definition.type.Label("¿En el área del dolor el examen fisico muestra hipoestesia a los pinchazos?")
 	private java.lang.Boolean hipoestesiaPinchazos;
 
 	@org.kie.api.definition.type.Label("¿En el área del dolor puede este ser causado o incrementa por cepillado o toque de agodón?")
