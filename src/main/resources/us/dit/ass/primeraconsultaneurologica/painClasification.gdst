@@ -26,7 +26,7 @@
     </Pattern52>
     <Pattern52>
       <factType>DN4</factType>
-      <boundName>f2</boundName>
+      <boundName>scale</boundName>
       <isNegated>false</isNegated>
       <conditions>
         <condition-column52>
@@ -41,8 +41,8 @@
           <constraintValueType>1</constraintValueType>
           <factField>puntuacion</factField>
           <fieldType>Integer</fieldType>
-          <operator>&gt;=</operator>
-          <valueList>4</valueList>
+          <operator>in</operator>
+          <valueList>1,2,3,4,5,6,7,8,9,10</valueList>
           <parameters/>
           <binding>$puntuacion</binding>
         </condition-column52>
@@ -123,17 +123,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>probable</valueString>
+        <valueString>no neuropático</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>4</valueString>
+        <valueString>1,2,3</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>true</valueString>
+        <valueString>false</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -151,157 +151,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>bajo</valueString>
+        <valueString>neuropático</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>false</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-    </list>
-    <list>
-      <value>
-        <valueNumeric class="int">3</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>improbable</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>false</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-    </list>
-    <list>
-      <value>
-        <valueNumeric class="int">4</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>probable</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
+        <valueString>10,4,5,6,7,8,9</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
         <valueString>true</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-    </list>
-    <list>
-      <value>
-        <valueNumeric class="int">5</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-    </list>
-    <list>
-      <value>
-        <valueNumeric class="int">6</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-    </list>
-    <list>
-      <value>
-        <valueNumeric class="int">7</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
