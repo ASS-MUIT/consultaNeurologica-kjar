@@ -7,29 +7,164 @@ package us.dit.ass.primeraconsultaneurologica;
 @javax.persistence.Entity
 public class DN4 implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "DN4_ID_GENERATOR")
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(sequenceName = "DN4_ID_SEQ", name = "DN4_ID_GENERATOR")
-    private java.lang.Long id;
+	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "DN4_ID_GENERATOR")
+	@javax.persistence.Id
+	@javax.persistence.SequenceGenerator(sequenceName = "DN4_ID_SEQ", name = "DN4_ID_GENERATOR")
+	private java.lang.Long id;
 
-    public DN4() {
-    }
-    
-    public DN4(java.lang.Long id) {
-        this.id = id;
-    }
+	@org.kie.api.definition.type.Label(value = "Característica del dolor")
+	private java.lang.Boolean dolorQuemazon;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+	@org.kie.api.definition.type.Label(value = "Caracteristica del dolor")
+	private java.lang.Boolean frioDoloroso;
 
+	@org.kie.api.definition.type.Label(value = "Caracteristica del dolor descarga electrica")
+	private java.lang.Boolean descargaElectrica;
 
+	@org.kie.api.definition.type.Label(value = "sintoma en la zona")
+	private java.lang.Boolean hormigueo;
 
+	@org.kie.api.definition.type.Label(value = "sintomas en la zona alfileres o agujas")
+	private java.lang.Boolean alfileres;
+
+	@org.kie.api.definition.type.Label(value = "sintomas en la zona entumecimiento")
+	private java.lang.Boolean entumecimiento;
+
+	@org.kie.api.definition.type.Label(value = "sintoma en la zona picazon")
+	private java.lang.Boolean picazon;
+
+	@org.kie.api.definition.type.Label(value = "el examen fisico muetra hipoestesia al tacto")
+	private java.lang.Boolean hipoestesiaTacto;
+
+	@org.kie.api.definition.type.Label(value = "el examen fisico muestra hipoestesia a los pinchazos")
+	private java.lang.Boolean hipoestesiaPinchazos;
+
+	@org.kie.api.definition.type.Label(value = "el dolor se causa o incrementa por cepillado o toque de agodon")
+	private java.lang.Boolean cepillado;
+
+	@org.kie.api.definition.type.Label(value = "puntuación del test")
+	private java.lang.Integer puntuacion;
+
+	public DN4() {
+	}
+
+	public java.lang.Long getId() {
+		return this.id;
+	}
+
+	public void setId(java.lang.Long id) {
+		this.id = id;
+	}
+
+	public java.lang.Boolean getDolorQuemazon() {
+		return this.dolorQuemazon;
+	}
+
+	public void setDolorQuemazon(java.lang.Boolean dolorQuemazon) {
+		this.dolorQuemazon = dolorQuemazon;
+	}
+
+	public java.lang.Boolean getFrioDoloroso() {
+		return this.frioDoloroso;
+	}
+
+	public void setFrioDoloroso(java.lang.Boolean frioDoloroso) {
+		this.frioDoloroso = frioDoloroso;
+	}
+
+	public java.lang.Boolean getDescargaElectrica() {
+		return this.descargaElectrica;
+	}
+
+	public void setDescargaElectrica(java.lang.Boolean descargaElectrica) {
+		this.descargaElectrica = descargaElectrica;
+	}
+
+	public java.lang.Boolean getHormigueo() {
+		return this.hormigueo;
+	}
+
+	public void setHormigueo(java.lang.Boolean hormigueo) {
+		this.hormigueo = hormigueo;
+	}
+
+	public java.lang.Boolean getAlfileres() {
+		return this.alfileres;
+	}
+
+	public void setAlfileres(java.lang.Boolean alfileres) {
+		this.alfileres = alfileres;
+	}
+
+	public java.lang.Boolean getEntumecimiento() {
+		return this.entumecimiento;
+	}
+
+	public void setEntumecimiento(java.lang.Boolean entumecimiento) {
+		this.entumecimiento = entumecimiento;
+	}
+
+	public java.lang.Boolean getPicazon() {
+		return this.picazon;
+	}
+
+	public void setPicazon(java.lang.Boolean picazon) {
+		this.picazon = picazon;
+	}
+
+	public java.lang.Boolean getHipoestesiaTacto() {
+		return this.hipoestesiaTacto;
+	}
+
+	public void setHipoestesiaTacto(java.lang.Boolean hipoestesiaTacto) {
+		this.hipoestesiaTacto = hipoestesiaTacto;
+	}
+
+	public java.lang.Boolean getHipoestesiaPinchazos() {
+		return this.hipoestesiaPinchazos;
+	}
+
+	public void setHipoestesiaPinchazos(java.lang.Boolean hipoestesiaPinchazos) {
+		this.hipoestesiaPinchazos = hipoestesiaPinchazos;
+	}
+
+	public java.lang.Boolean getCepillado() {
+		return this.cepillado;
+	}
+
+	public void setCepillado(java.lang.Boolean cepillado) {
+		this.cepillado = cepillado;
+	}
+
+	public java.lang.Integer getPuntuacion() {
+	    setPuntuacion();
+		return this.puntuacion;
+	}
+
+	private void setPuntuacion() {
+		this.puntuacion = 0;
+	}
+
+	public DN4(java.lang.Long id, java.lang.Boolean dolorQuemazon,
+			java.lang.Boolean frioDoloroso,
+			java.lang.Boolean descargaElectrica, java.lang.Boolean hormigueo,
+			java.lang.Boolean alfileres, java.lang.Boolean entumecimiento,
+			java.lang.Boolean picazon, java.lang.Boolean hipoestesiaTacto,
+			java.lang.Boolean hipoestesiaPinchazos,
+			java.lang.Boolean cepillado) {
+		this.id = id;
+		this.dolorQuemazon = dolorQuemazon;
+		this.frioDoloroso = frioDoloroso;
+		this.descargaElectrica = descargaElectrica;
+		this.hormigueo = hormigueo;
+		this.alfileres = alfileres;
+		this.entumecimiento = entumecimiento;
+		this.picazon = picazon;
+		this.hipoestesiaTacto = hipoestesiaTacto;
+		this.hipoestesiaPinchazos = hipoestesiaPinchazos;
+		this.cepillado = cepillado;
+	}
 
 }
