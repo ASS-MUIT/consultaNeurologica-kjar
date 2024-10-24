@@ -8,21 +8,21 @@ public class dolorNeuropatico implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Nivel del dolor Neuropatico detectado")
-	private int nivel;
+	@org.kie.api.definition.type.Label("nivel del dolor")
+	private Integer nivel;
 
 	public dolorNeuropatico() {
 	}
 
-	public int getNivel() {
+	public java.lang.Integer getNivel() {
 		return this.nivel;
 	}
 
-	public void setNivel(int nivel) {
+	public void setNivel(java.lang.Integer nivel) {
 		this.nivel = nivel;
 	}
 
-	public dolorNeuropatico(int nivel) {
+	public dolorNeuropatico(java.lang.Integer nivel) {
 		this.nivel = nivel;
 	}
 
