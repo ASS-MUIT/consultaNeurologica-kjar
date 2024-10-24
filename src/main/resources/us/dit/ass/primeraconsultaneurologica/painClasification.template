@@ -3,14 +3,56 @@
   <modelVersion>1.0</modelVersion>
   <attributes/>
   <metadataList/>
-  <lhs/>
-  <rhs/>
+  <lhs>
+    <fact>
+      <constraintList>
+        <constraints>
+          <fieldConstraint>
+            <value>4</value>
+            <operator>&gt;=</operator>
+            <constraintValueType>1</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <factType>DN4</factType>
+            <fieldName>puntuacion</fieldName>
+            <fieldType>Integer</fieldType>
+          </fieldConstraint>
+        </constraints>
+      </constraintList>
+      <factType>DN4</factType>
+      <isNegated>false</isNegated>
+      <window>
+        <parameters/>
+      </window>
+    </fact>
+  </lhs>
+  <rhs>
+    <assert>
+      <fieldValues>
+        <fieldValue>
+          <field>nivel</field>
+          <value>$puntuacion</value>
+          <nature>7</nature>
+          <type>Integer</type>
+        </fieldValue>
+      </fieldValues>
+      <factType>dolorNeuropatico</factType>
+      <isBound>false</isBound>
+    </assert>
+  </rhs>
   <imports>
     <imports/>
   </imports>
   <packageName>us.dit.ass.primeraconsultaneurologica</packageName>
   <isNegated>false</isNegated>
   <table>
+    <entry>
+      <string>$puntuacion</string>
+      <list/>
+    </entry>
     <entry>
       <string>__ID_KOL_NAME__</string>
       <list/>
