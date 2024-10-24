@@ -1,0 +1,634 @@
+<decision-table52>
+  <tableName>painClasification</tableName>
+  <rowNumberCol>
+    <hideColumn>false</hideColumn>
+    <width>-1</width>
+  </rowNumberCol>
+  <descriptionCol>
+    <hideColumn>false</hideColumn>
+    <width>-1</width>
+  </descriptionCol>
+  <ruleNameColumn>
+    <hideColumn>true</hideColumn>
+    <width>-1</width>
+  </ruleNameColumn>
+  <metadataCols/>
+  <attributeCols/>
+  <conditionPatterns>
+    <Pattern52>
+      <factType>Boolean</factType>
+      <boundName>esNeuropatico</boundName>
+      <isNegated>false</isNegated>
+      <conditions>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>$value</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>this</factField>
+          <fieldType>Boolean</fieldType>
+          <operator>==</operator>
+          <valueList>true,false</valueList>
+          <parameters/>
+        </condition-column52>
+      </conditions>
+      <window>
+        <parameters/>
+      </window>
+      <entryPointName>esNeuropatico</entryPointName>
+    </Pattern52>
+    <Pattern52>
+      <factType>DN4</factType>
+      <boundName>scale</boundName>
+      <isNegated>false</isNegated>
+      <conditions>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>$puntuacion</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>puntuacion</factField>
+          <fieldType>Integer</fieldType>
+          <operator>memberOf</operator>
+          <valueList>1,2,3,4,5,6,7,8,9,10</valueList>
+          <parameters/>
+        </condition-column52>
+      </conditions>
+      <window>
+        <parameters/>
+      </window>
+      <entryPointName>scale</entryPointName>
+    </Pattern52>
+  </conditionPatterns>
+  <actionCols>
+    <set-field-col52>
+      <typedDefaultValue>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </typedDefaultValue>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <header>$value</header>
+      <boundName>esNeuropatico</boundName>
+      <factField>this</factField>
+      <type>Boolean</type>
+      <valueList>true,false</valueList>
+      <update>true</update>
+    </set-field-col52>
+    <insert-fact-column52>
+      <typedDefaultValue>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </typedDefaultValue>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <header>$resultado</header>
+      <factType>Boolean</factType>
+      <boundName>resultado</boundName>
+      <factField>this</factField>
+      <type>Boolean</type>
+      <valueList>true,false</valueList>
+      <isInsertLogical>false</isInsertLogical>
+    </insert-fact-column52>
+  </actionCols>
+  <auditLog>
+    <filter class="org.drools.guvnor.client.modeldriven.dt52.auditlog.DecisionTableAuditLogFilter">
+      <acceptedTypes>
+        <entry>
+          <string>INSERT_ROW</string>
+          <boolean>false</boolean>
+        </entry>
+        <entry>
+          <string>INSERT_COLUMN</string>
+          <boolean>false</boolean>
+        </entry>
+        <entry>
+          <string>DELETE_ROW</string>
+          <boolean>false</boolean>
+        </entry>
+        <entry>
+          <string>DELETE_COLUMN</string>
+          <boolean>false</boolean>
+        </entry>
+        <entry>
+          <string>UPDATE_COLUMN</string>
+          <boolean>false</boolean>
+        </entry>
+      </acceptedTypes>
+    </filter>
+    <entries/>
+  </auditLog>
+  <imports>
+    <imports>
+      <org.kie.soup.project.datamodel.imports.Import>
+        <type>java.lang.Boolean</type>
+      </org.kie.soup.project.datamodel.imports.Import>
+    </imports>
+  </imports>
+  <packageName>us.dit.ass.primeraconsultaneurologica</packageName>
+  <version>739</version>
+  <tableFormat>EXTENDED_ENTRY</tableFormat>
+  <hitPolicy>NONE</hitPolicy>
+  <data>
+    <list>
+      <value>
+        <valueNumeric>1</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>true</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>1</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
+      <value reference="../../../actionCols/insert-fact-column52/typedDefaultValue"/>
+    </list>
+    <list>
+      <value>
+        <valueNumeric>2</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../list/value[4]"/>
+      <value>
+        <valueString>2</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
+      <value reference="../../../actionCols/insert-fact-column52/typedDefaultValue"/>
+    </list>
+    <list>
+      <value>
+        <valueNumeric>3</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../list/value[4]"/>
+      <value>
+        <valueString>3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
+      <value reference="../../../actionCols/insert-fact-column52/typedDefaultValue"/>
+    </list>
+    <list>
+      <value>
+        <valueNumeric>4</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../list/value[4]"/>
+      <value>
+        <valueString>4</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
+      <value reference="../../../actionCols/insert-fact-column52/typedDefaultValue"/>
+    </list>
+    <list>
+      <value>
+        <valueNumeric>5</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../list/value[4]"/>
+      <value>
+        <valueString>5</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
+      <value reference="../../../actionCols/insert-fact-column52/typedDefaultValue"/>
+    </list>
+    <list>
+      <value>
+        <valueNumeric>6</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../list/value[4]"/>
+      <value>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
+      <value reference="../../../actionCols/insert-fact-column52/typedDefaultValue"/>
+    </list>
+    <list>
+      <value>
+        <valueNumeric>7</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../list/value[4]"/>
+      <value>
+        <valueString>7</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
+      <value reference="../../../actionCols/insert-fact-column52/typedDefaultValue"/>
+    </list>
+    <list>
+      <value>
+        <valueNumeric>8</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../list/value[4]"/>
+      <value>
+        <valueString>8</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
+      <value reference="../../../actionCols/insert-fact-column52/typedDefaultValue"/>
+    </list>
+    <list>
+      <value>
+        <valueNumeric>9</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../list/value[4]"/>
+      <value>
+        <valueString>9</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
+      <value reference="../../../actionCols/insert-fact-column52/typedDefaultValue"/>
+    </list>
+    <list>
+      <value>
+        <valueNumeric>10</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../list/value[4]"/>
+      <value>
+        <valueString>10</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
+      <value reference="../../../actionCols/insert-fact-column52/typedDefaultValue"/>
+    </list>
+    <list>
+      <value>
+        <valueNumeric>11</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>false</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../list/value[5]"/>
+      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
+      <value reference="../../../actionCols/insert-fact-column52/typedDefaultValue"/>
+    </list>
+    <list>
+      <value>
+        <valueNumeric>12</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../list[11]/value[4]"/>
+      <value reference="../../list[2]/value[5]"/>
+      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
+      <value reference="../../../actionCols/insert-fact-column52/typedDefaultValue"/>
+    </list>
+    <list>
+      <value>
+        <valueNumeric>13</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../list[11]/value[4]"/>
+      <value reference="../../list[3]/value[5]"/>
+      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
+      <value reference="../../../actionCols/insert-fact-column52/typedDefaultValue"/>
+    </list>
+    <list>
+      <value>
+        <valueNumeric>14</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../list[11]/value[4]"/>
+      <value reference="../../list[4]/value[5]"/>
+      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
+      <value reference="../../../actionCols/insert-fact-column52/typedDefaultValue"/>
+    </list>
+    <list>
+      <value>
+        <valueNumeric>15</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../list[11]/value[4]"/>
+      <value reference="../../list[5]/value[5]"/>
+      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
+      <value reference="../../../actionCols/insert-fact-column52/typedDefaultValue"/>
+    </list>
+    <list>
+      <value>
+        <valueNumeric>16</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../list[11]/value[4]"/>
+      <value reference="../../list[6]/value[5]"/>
+      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
+      <value reference="../../../actionCols/insert-fact-column52/typedDefaultValue"/>
+    </list>
+    <list>
+      <value>
+        <valueNumeric>17</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../list[11]/value[4]"/>
+      <value reference="../../list[7]/value[5]"/>
+      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
+      <value reference="../../../actionCols/insert-fact-column52/typedDefaultValue"/>
+    </list>
+    <list>
+      <value>
+        <valueNumeric>18</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../list[11]/value[4]"/>
+      <value reference="../../list[8]/value[5]"/>
+      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
+      <value reference="../../../actionCols/insert-fact-column52/typedDefaultValue"/>
+    </list>
+    <list>
+      <value>
+        <valueNumeric>19</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../list[11]/value[4]"/>
+      <value reference="../../list[9]/value[5]"/>
+      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
+      <value reference="../../../actionCols/insert-fact-column52/typedDefaultValue"/>
+    </list>
+    <list>
+      <value>
+        <valueNumeric>20</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../list[11]/value[4]"/>
+      <value reference="../../list[10]/value[5]"/>
+      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
+      <value reference="../../../actionCols/insert-fact-column52/typedDefaultValue"/>
+    </list>
+  </data>
+</decision-table52>
