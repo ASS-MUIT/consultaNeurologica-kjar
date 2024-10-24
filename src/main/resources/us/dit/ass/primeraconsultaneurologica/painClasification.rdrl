@@ -1,0 +1,9 @@
+package us.dit.ass.primeraconsultaneurologica;
+
+import java.lang.Number;
+
+rule "painClasification"
+	dialect "mvel"
+	when
+	then
+end
