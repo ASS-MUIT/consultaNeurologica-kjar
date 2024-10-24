@@ -6,12 +6,24 @@ package us.dit.ass.primeraconsultaneurologica;
 
 public class dolorNeuropatico implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public dolorNeuropatico() {
-    }
+	@org.kie.api.definition.type.Label(value = "Nivel del dolor Neuropatico detectado")
+	private int nivel;
 
+	public dolorNeuropatico() {
+	}
 
+	public int getNivel() {
+		return this.nivel;
+	}
 
+	public void setNivel(int nivel) {
+		this.nivel = nivel;
+	}
+
+	public dolorNeuropatico(int nivel) {
+		this.nivel = nivel;
+	}
 
 }
