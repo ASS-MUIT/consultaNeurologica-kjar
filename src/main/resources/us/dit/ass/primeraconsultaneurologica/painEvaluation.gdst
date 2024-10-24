@@ -123,7 +123,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>neuropaticoLeve</valueString>
+        <valueString>hay dolor neuropatico</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
