@@ -1,0 +1,28 @@
+[
+        [
+            "name" : "AppointmentDAODefinitions",
+            "displayName" : "AppointmentDAODefinitions",
+            "category" : "wih",
+            "description" : "WI para la consulta de atributos de un objeto appointment",
+            "defaultHandler" : "mvel: new us.dit.muit.ass.wih.AppointmentDAOWorkItemHandler()",
+            "documentation" : "wih/index.html",
+
+            "parameters" : [
+                                "Attributes" : new StringDataType()
+                ,"URL" : new StringDataType()
+
+            ],
+            "results" : [
+                                "Practitioner" : new StringDataType()
+                ,"Subject" : new StringDataType()
+
+            ],
+            "mavenDependencies" : [
+                                 "us.dit.muit.ass:wih:0.0.1-SNAPSHOT"
+
+            ],
+            "icon" : "AppointmentDAODefinitions.png"
+
+        ]
+
+]
