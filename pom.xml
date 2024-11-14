@@ -47,7 +47,7 @@
     </dependency>
     <dependency>
       <groupId>jakarta.persistence</groupId>
-      <artifactId>jakarta.persistence-ap</artifactId>
+      <artifactId>jakarta.persistence-api</artifactId>
       <version>3.1.0.RC-jbossorg-1</version>
     </dependency>
   </dependencies>
