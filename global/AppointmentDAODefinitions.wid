@@ -8,7 +8,7 @@
             "documentation" : "wih/index.html",
 
             "parameters" : [
-                                "Attributes" : new StringDataType()
+                                "Attributes" : java.util.List
                 ,"URL" : new StringDataType()
 
             ],
